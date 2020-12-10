@@ -34,6 +34,10 @@ calcForm.onsubmit = (evt) => {
   let elinputY= Number(inputY.value);
   let elResult = solution;
 
+  if (elinputY === 0) {
+    alert('Be carefull. Fill field truly')
+  }
+
   calculation = new calculator(elinputX,elinputY);
 
   switch (elSelectOperation) {
@@ -51,7 +55,8 @@ calcForm.onsubmit = (evt) => {
       break;
     case 'difference':
       console.log(calculation.difference());
-      break;calculation.difference();
+      elResult.textContent(calculation.difference());
+      break;
     case 'module':
       console.log(calculation.module());
       elResult.textContent = calculation.module();
