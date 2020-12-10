@@ -4,10 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
 
-  <form action="https://htmlacademy.ru" method="POST"></form>
+<div class="container-xl">
+  <form class="" id="calcForm" action="https://echo.htmlacademy.ru" method="POST">
+    <h2 class="h3">Calculator</h2>
+    <div class="form-group d-flex ">
+      <input class="form-control me-3 w-25" id="inputX" placeholder="x" type="number" required>
+
+      <select class="form-select me-3 w-25" name="" id="selectOperation" required>
+        <option value="addition">addition +</option>
+        <option value="division">division /</option>
+        <option value="product">product *</option>
+        <option value="difference">difference -</option>
+        <option value="module">module %</option>
+        <option value="power">power **</option>
+      </select>
+
+      <input class="" type="number" id="inputY" placeholder="Y" required>
+
+      <button class="btn btn-primary ms-3">calculate</button>
+    </div>
+    <span id="solution"></span>
+  </form>
+</div>
+
   <script src="main.js"></script>
 </body>
 </html>
