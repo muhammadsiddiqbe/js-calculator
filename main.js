@@ -55,7 +55,7 @@ calcForm.onsubmit = (evt) => {
       break;
     case 'difference':
       console.log(calculation.difference());
-      elResult.textContent(calculation.difference());
+      elResult.textContent = (calculation.difference());
       break;
     case 'module':
       console.log(calculation.module());
